@@ -3,7 +3,7 @@ from .models import Board
 
 @admin.register(Board)
 class BoardAdmin(admin.ModelAdmin):
-    list_display = ('title', 'description')
+    list_display = ('__str__','title', 'description')
 
 
 

@@ -6,6 +6,6 @@ class Board(models.Model):
     description = models.TextField()
     
     def __str__(self):
-        return self.title
+       return f"{self.pk} {self.title}"
 
 
